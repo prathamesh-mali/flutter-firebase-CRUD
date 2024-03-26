@@ -169,31 +169,18 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       const Text(
                         "Edit",
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
                           color: Colors.orange,
                         ),
                       ),
-                      const SizedBox(
-                        width: 20,
-                      ),
-                      const Text(
-                        "Delete",
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.orange,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 20,
-                      ),
+                      const Spacer(),
                       GestureDetector(
                         onTap: () {
                           Navigator.pop(context);
